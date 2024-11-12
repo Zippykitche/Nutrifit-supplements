@@ -5,7 +5,7 @@ function Home() {
 const [supplements, setSupplements] = useState([]);
 
 useEffect(() => {
-    fetch (`http://localhost:4000/supplements`)
+    fetch (`https://my-json-server.typicode.com/Zippykitche/Nutrifit-supplements/supplements`)
     .then((response) => response.json())
     .then((data) => setSupplements (data))
     .catch((error)=> console.error('error fetching supplements:', error));
