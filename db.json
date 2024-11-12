@@ -1,0 +1,75 @@
+{
+    "supplements": [
+      {
+        "id": 1,
+        "name": "Whey Protein",
+        "description": "High-quality protein for muscle building and recovery.",
+        "price": 29.99,
+        "image": "https://via.placeholder.com/150?text=Whey+Protein"
+      },
+      {
+        "id": 2,
+        "name": "Vitamin D3",
+        "description": "Supports bone, immune, and muscle health.",
+        "price": 14.99,
+        "image": "https://via.placeholder.com/150?text=Vitamin+D3"
+      },
+      {
+        "id": 3,
+        "name": "Omega-3 Fish Oil",
+        "description": "Promotes heart, brain, and joint health.",
+        "price": 19.99,
+        "image": "https://via.placeholder.com/150?text=Omega-3+Fish+Oil"
+      },
+      {
+        "id": 4,
+        "name": "Multivitamin",
+        "description": "Comprehensive daily vitamins and minerals.",
+        "price": 24.99,
+        "image": "https://via.placeholder.com/150?text=Multivitamin"
+      },
+      {
+        "id": 5,
+        "name": "Creatine Monohydrate",
+        "description": "Enhances strength, power, and muscle gains.",
+        "price": 17.99,
+        "image": "https://via.placeholder.com/150?text=Creatine+Monohydrate"
+      },
+      {
+        "id": 6,
+        "name": "Pre-Workout",
+        "description": "Boosts energy, focus, and endurance for workouts.",
+        "price": 22.99,
+        "image": "https://via.placeholder.com/150?text=Pre-Workout"
+      },
+      {
+        "id": 7,
+        "name": "BCAA Powder",
+        "description": "Supports muscle recovery and reduces fatigue.",
+        "price": 18.99,
+        "image": "https://via.placeholder.com/150?text=BCAA+Powder"
+      },
+      {
+        "id": 8,
+        "name": "Probiotic Supplement",
+        "description": "Supports gut health and digestion.",
+        "price": 21.99,
+        "image": "https://via.placeholder.com/150?text=Probiotic+Supplement"
+      },
+      {
+        "id": 9,
+        "name": "Magnesium",
+        "description": "Supports muscle and nerve function, energy production.",
+        "price": 12.99,
+        "image": "https://via.placeholder.com/150?text=Magnesium"
+      },
+      {
+        "id": 10,
+        "name": "Glucosamine Chondroitin",
+        "description": "Supports joint health and flexibility.",
+        "price": 25.99,
+        "image": "https://via.placeholder.com/150?text=Glucosamine+Chondroitin"
+      }
+    ]
+  }
+  
