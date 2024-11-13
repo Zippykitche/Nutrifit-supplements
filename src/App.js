@@ -9,7 +9,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+    <Router basename="/Nutrifit-supplements" future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

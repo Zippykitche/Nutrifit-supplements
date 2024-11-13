@@ -3,9 +3,13 @@ import SupplementCard from "./SupplementCard";
 
 function Home() {
 const [supplements, setSupplements] = useState([]);
+const url = process.env.NODE_ENV === 'development' 
+    ? "http://localhost:4000/supplements" 
+    : "https://my-json-server.typicode.com/Zippykitche/Nutrifit-supplements/supplements";
+
 
 useEffect(() => {
-    fetch (`https://my-json-server.typicode.com/Zippykitche/Nutrifit-supplements/supplements`)
+    fetch (url)
     .then((response) => response.json())
     .then((data) => setSupplements (data))
     .catch((error)=> console.error('error fetching supplements:', error));
