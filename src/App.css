@@ -1,67 +1,100 @@
 /* home page styling */
-.Supplements-list {
+.supplement-display {
   text-align: center;
-}
-
-.Supplement-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.Supplement-item {
-  border: 1px solid #ddd;
-  padding: 16px;
-  margin: 16px;
-  width: 200px;
-  text-align: center;
-}
-
-.Supplement-item img {
-  width: 100%;
-  height: auto;
-}
-/* SupplementCard Styling */
-
-.card {
-  width: 18rem;  /* Set the width to make the card smaller */
-  height: 320px; /* Adjust the height of the card */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 10px;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid #ddd;
-}
-
-.card img {
-  width: 100%;
-  height: 150px; /* Set a fixed height for images */
-  object-fit: cover; /* Ensure the image doesn't get distorted */
-}
-
-.card-body {
+  margin: 15px;
   padding: 10px;
+  position: relative;
+  width: 200px; 
+}
+.image-container {
+  width: 200px; /* Set a uniform width */
+  height: 200px; /* Set a uniform height */
+  background-color: #e0e0e0; /* Light grey background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px; /* Optional: Rounded corners */
+  overflow: hidden; /* Ensures the image stays within bounds */
+}
+.supplement-image {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+.supplement-title {
+  font-size: 1.2em;
+  margin-top: 10px;
 }
 
-.card-title {
-  font-size: 16px; /* Adjust title font size */
+.supplement-description {
+  font-size: small;
+  color: grey;
 }
 
-.card-text {
-  font-size: 14px; /* Adjust description and price text font size */
-  margin: 5px 0;
-}
+
 /* Adjust the size of the cart icon */
-.cart-icon {
+.cart-icon-link {
   position: absolute;
-  top: 10px;
-  right: 10px;
-}
-.cart-icon-img {
-  width: 40px !important;  /* Set the width */
-  height: 40px !important; /* Set the height */
-  cursor: pointer;  /* Makes the icon clickable */
+  top: 5px;
+  right: 5px;
 }
 
+.cart-icon-img {
+  width: 30px; /* Set desired size */
+  height: 30px;
+  cursor: pointer;
+}
+
+/* home page styling */
+.page-header {
+  background-color: rgba(229, 207, 163, 0.256); /* Light background */
+  padding: 150px 20px;           /* Add padding around the title */
+  text-align: center;  
+  width: 100%;      
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 2rem;           /* Adjust font size as desired */
+  color: #333;               /* Title text color */
+}
+
+/* header styling */
+.header-container {
+  display: flex;  /* Flexbox for horizontal layout */
+  justify-content: center;  /* Center everything in the container */
+  padding: 20px;
+}
+
+/* Flex container for the logo and nav links */
+.logo-nav {
+  display: flex;  /* Flexbox to align items horizontally */
+  justify-content: space-between;  /* Space between logo and nav links */
+  width: 0%;  /* Make the container take full width */
+  max-width: 1200px;  /* Optional max width for responsiveness */
+  align-items: center;  /* Center items vertically */
+}
+
+/* Styling for the logo */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Styling for the navigation links */
+.nav-links {
+  display: flex;  /* Arrange nav links horizontally */
+  gap: 20px;  /* Space between links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  padding: 8px 16px;
+}
+
+.nav-links a:hover {
+  background-color: #ddd;  /* Hover effect */
+  border-radius: 4px;  /* Rounded corners on hover */
+}

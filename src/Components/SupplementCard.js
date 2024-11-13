@@ -3,27 +3,24 @@ import React from "react";
 function SupplementCard({name, description, image, price}){
     
 return (
-    <div className="card">
-      <div className="cart-icon">
+    <div className="supplement-display">
+      <div className="image-container">
+        <img src={image} alt={name} className="supplement-image" />
         <a
           href="/Nutrifit-supplements/images/add-cart.png"
-          title="add to cart icons"
+          title="Add to Cart"
+          className="cart-icon-link"
         >
           <img
-            src="/Nutrifit-supplements/images/add-cart.png"  
+            src="/Nutrifit-supplements/images/add-cart.png"
             alt="Add to cart"
             className="cart-icon-img"
           />
         </a>
       </div>
-      <img src={image} className="card-img-top" alt={name} />
-      <div className="card-body">
-        <h5 className="card-title">{name}</h5>
-        <p className="card-text">{description}</p>
-        <p className="card-text">
-          <strong>Price: KSH {price}</strong>
-        </p>
-      </div>
+      <h5 className="supplement-title">{name}</h5>
+      <p className="supplement-description">{description}</p>
+      <p className="supplement-price"><strong>Price: KSH {price}</strong></p>
     </div>
 );
 }
