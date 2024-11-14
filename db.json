@@ -9,10 +9,11 @@
       },
       {
         "id": 2,
-        "name": "Pregnacare-Plus",
-        "description": "Pregnacare-Plus is leading supplement in pregnancy care, with high quality Omega-3 (DHA 300mg) capsules, in a convenient 2-in-1 pack, for use throughout pregnancy.",
-        "price": 2500,
-        "image": "/Nutrifit-supplements/images/pregnacare-plus.jpg"
+        "name": "FoliGROWTH",
+        "description": "THICKER HAIR GROWTH, HAIR LOSS TREATMENT, GROW FULLER HAIR, and ANTI-AGING for SKIN and Nails: uses patented ingredients like Opti MSM and clinically developed cellular support with 5000mcg of Biotin, Saw Palmetto, Hyaluronic Acid, Choline, Silica, Vitamin C, and 2000iu Vitamin D3. 28 herbs and vitamins.",
+        "price": 8000,
+        "image": "/Nutrifit-supplements/images/foligrowth.png"
+
       },
       {
         "id": 3,
@@ -37,10 +38,10 @@
       },
       {
         "id": 6,
-        "name": "FoliGROWTH",
-        "description": "THICKER HAIR GROWTH, HAIR LOSS TREATMENT, GROW FULLER HAIR, and ANTI-AGING for SKIN and Nails: uses patented ingredients like Opti MSM and clinically developed cellular support with 5000mcg of Biotin, Saw Palmetto, Hyaluronic Acid, Choline, Silica, Vitamin C, and 2000iu Vitamin D3. 28 herbs and vitamins.",
-        "price": 8000,
-        "image": "/Nutrifit-supplements/images/foligrowth.png"
+        "name": "Pregnacare-Plus",
+        "description": "Pregnacare-Plus is leading supplement in pregnancy care, with high quality Omega-3 (DHA 300mg) capsules, in a convenient 2-in-1 pack, for use throughout pregnancy.",
+        "price": 2500,
+        "image": "/Nutrifit-supplements/images/pregnacare-plus.jpg"
       },
       {
         "id": 7,

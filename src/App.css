@@ -1,14 +1,45 @@
 /* home page styling */
+
+.page-title {
+  background: linear-gradient(to bottom, #78340340, #f5e3be2d) !important;
+  padding: 50px 20px; /* Adjusted padding */
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center; /* Center the content vertically */
+  justify-content: space-between; /* Place logo/text on the left and image on the right */
+  position: relative; /* Ensure proper positioning of children */
+  height: 400px;
+}
+.page-title h1 {
+  margin: 0;
+  font-size: 2rem;           
+  color: #333;               
+}
+.title-images {
+  position: absolute;
+  right: 0; /* Align the image to the right */
+  bottom: 0; /* Align the image to the bottom of the container */
+  width: 50%; /* Set the width to fit the container */
+  height: 90%; /* Ensure the image fills the height */
+  overflow: hidden; /* Hide any overflow */
+}
+.person-image {
+  width: auto; /* Adjust the width of the image */
+  height: 90%; /* Keep the image's aspect ratio */
+}
 .supplement-display {
   text-align: center;
-  margin: 15px;
-  padding: 10px;
+  margin: 0px;
+  padding: 0px;
   position: relative;
   width: 200px; 
+  align-items: center;
 }
 .image-container {
-  width: 200px; /* Set a uniform width */
-  height: 200px; /* Set a uniform height */
+  width: 180px; /* Set a uniform width */
+  height: 180px; /* Set a uniform height */
   background-color: #e0e0e0; /* Light grey background */
   display: flex;
   justify-content: center;
@@ -22,13 +53,37 @@
   object-fit: contain;
 }
 .supplement-title {
-  font-size: 1.2em;
+  font-size: 1em;
   margin-top: 10px;
 }
-
 .supplement-description {
-  font-size: small;
+  font-size: 12px;
   color: grey;
+}
+.supplement-price {
+  font-size: 1em;
+  color: rgb(236, 195, 141);
+}
+
+.supplements-container {
+  width: 75%;                  /* Set to half the width of the 'Elevate Your Health' container */
+  margin: 0 auto;              /* Center the container horizontally */
+  padding: 20px;               /* Padding around the container */
+  box-sizing: border-box; 
+}
+
+.supplements-list {
+  display: grid;               /* Use grid layout for supplements */
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 10px;                   /* Space between cards */
+  padding: 0;                  /* No extra padding */
+  justify-items: stretch; 
+}
+
+.supplement-card-container {
+  border-radius: 8px;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 
@@ -40,61 +95,113 @@
 }
 
 .cart-icon-img {
-  width: 30px; /* Set desired size */
-  height: 30px;
+  width: 40px; /* Set desired size */
+  height: 40px;
   cursor: pointer;
-}
-
-/* home page styling */
-.page-header {
-  background-color: rgba(229, 207, 163, 0.256); /* Light background */
-  padding: 150px 20px;           /* Add padding around the title */
-  text-align: center;  
-  width: 100%;      
-}
-
-.page-header h1 {
-  margin: 0;
-  font-size: 2rem;           /* Adjust font size as desired */
-  color: #333;               /* Title text color */
 }
 
 /* header styling */
 .header-container {
-  display: flex;  /* Flexbox for horizontal layout */
-  justify-content: center;  /* Center everything in the container */
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px; /* Decrease top/bottom padding for a thinner header */
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+  height: 40px; 
 }
 
-/* Flex container for the logo and nav links */
-.logo-nav {
-  display: flex;  /* Flexbox to align items horizontally */
-  justify-content: space-between;  /* Space between logo and nav links */
-  width: 0%;  /* Make the container take full width */
-  max-width: 1200px;  /* Optional max width for responsiveness */
-  align-items: center;  /* Center items vertically */
-}
-
-/* Styling for the logo */
 .logo {
   font-size: 2rem;
   font-weight: bold;
+  margin: 0;
 }
 
-/* Styling for the navigation links */
 .nav-links {
-  display: flex;  /* Arrange nav links horizontally */
-  gap: 20px;  /* Space between links */
+  display: flex;       /* Keeps nav links on the same horizontal line */
+  gap: 5px;           /* Space between each link */
 }
 
 .nav-links a {
   text-decoration: none;
   color: #333;
   font-size: 1rem;
-  padding: 8px 16px;
+  padding: 20px 16px;
 }
 
 .nav-links a:hover {
-  background-color: #ddd;  /* Hover effect */
-  border-radius: 4px;  /* Rounded corners on hover */
+  background-color: #ddd;
+  border-radius: 4px;
+}
+.cart-icon {
+  width: 30px;  /* Adjust the size of the icon */
+  height: auto; /* Keep aspect ratio */
+  vertical-align: middle; /* Align the icon with the text, if any */
+}
+
+/* search input styling */
+.search-container {
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Style for the search input field */
+.search-input {
+  width: 50%;  /* Adjust the width as needed */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.search-input::placeholder {
+  color: #888;
+}
+
+/* added to cart notification */
+.notification {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 49, 49, 0.459); /* Green background for success */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it appears above other elements */
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Smooth fade-in effect */
+}
+
+.notification.show {
+  opacity: 1; /* Show the alert */
+}
+/* cart items styling */
+
+.cart-container {
+  padding: 20px;
+}
+
+.cart-items-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.cart-item-image {
+  width: 80px;
+  height: auto;
+  margin-right: 15px;
 }
