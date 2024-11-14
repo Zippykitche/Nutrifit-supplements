@@ -1,33 +1,124 @@
-/* home page styling */
+/* ..........header styling..... */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px; 
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+  height: 40px; 
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;       
+  gap: 5px;           
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  padding: 20px 16px;
+  transition: transform 0.2s ease;
+}
+
+.nav-links a:hover {
+  transform: scale(1.2);
+}
+.nav-links a:active {
+  transform: scale(0.98);
+}
+.nav-links a:last-child {
+  position: relative; 
+}
+.cart-icon {
+  width: 25px;  
+  height: 25px; 
+  vertical-align: middle; 
+}
+.cart-icon-link {
+  position: relative;
+  display: flex;
+  align-items: center; 
+}
+.cart-count {
+  position: absolute;
+  top: 8px;
+  right: 7px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* ..........home page styling..... */
 
 .page-title {
   background: linear-gradient(to bottom, #78340340, #f5e3be2d) !important;
-  padding: 50px 20px; /* Adjusted padding */
+  padding: 50px 20px; 
   text-align: left;
   width: 100%;
   box-sizing: border-box;
   display: flex;
-  align-items: center; /* Center the content vertically */
-  justify-content: space-between; /* Place logo/text on the left and image on the right */
-  position: relative; /* Ensure proper positioning of children */
+  align-items: flex-start;
+  justify-content: center; 
+  position: relative; 
   height: 400px;
+  flex-direction: column;
+}
+.page-title p {
+  font-size: 1rem;
+  margin: 0; 
 }
 .page-title h1 {
-  margin: 0;
+  margin: 5px 0 0 0;
   font-size: 2rem;           
   color: #333;               
 }
+.shop-now-box {
+  background-color: #7834034d; 
+  color: white;
+  font-size: 0.8rem; 
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+.shop-now-box:hover {
+  background-color: #783403ab; 
+  transform: scale(1.05); 
+}
+
+.shop-now-box:active {
+  background-color: #9e4303ab;
+  transform: scale(0.95); 
+}
+
 .title-images {
   position: absolute;
-  right: 0; /* Align the image to the right */
-  bottom: 0; /* Align the image to the bottom of the container */
-  width: 50%; /* Set the width to fit the container */
-  height: 90%; /* Ensure the image fills the height */
-  overflow: hidden; /* Hide any overflow */
+  right: 0;
+  bottom: 0; 
+  width: auto; 
+  height: 100%; 
+  overflow: hidden; 
+  z-index: -1;
 }
 .person-image {
-  width: auto; /* Adjust the width of the image */
-  height: 90%; /* Keep the image's aspect ratio */
+  width: 70%; 
+  height: auto; 
+  object-fit: cover;
 }
 .supplement-display {
   text-align: center;
@@ -38,14 +129,14 @@
   align-items: center;
 }
 .image-container {
-  width: 180px; /* Set a uniform width */
-  height: 180px; /* Set a uniform height */
-  background-color: #e0e0e0; /* Light grey background */
+  width: 180px; 
+  height: 180px; 
+  background-color: #e0e0e0; 
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px; /* Optional: Rounded corners */
-  overflow: hidden; /* Ensures the image stays within bounds */
+  border-radius: 8px; 
+  overflow: hidden; 
 }
 .supplement-image {
   width: 80%;
@@ -66,17 +157,17 @@
 }
 
 .supplements-container {
-  width: 75%;                  /* Set to half the width of the 'Elevate Your Health' container */
-  margin: 0 auto;              /* Center the container horizontally */
-  padding: 20px;               /* Padding around the container */
+  width: 75%;                 
+  margin: 0 auto;             
+  padding: 20px;               
   box-sizing: border-box; 
 }
 
 .supplements-list {
-  display: grid;               /* Use grid layout for supplements */
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  gap: 10px;                   /* Space between cards */
-  padding: 0;                  /* No extra padding */
+  display: grid;              
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px;                   
+  padding: 0;                
   justify-items: stretch; 
 }
 
@@ -87,7 +178,7 @@
 }
 
 
-/* Adjust the size of the cart icon */
+/* ............Adjust the size of the cart icon............ */
 .cart-icon-link {
   position: absolute;
   top: 5px;
@@ -95,60 +186,19 @@
 }
 
 .cart-icon-img {
-  width: 40px; /* Set desired size */
+  width: 40px; 
   height: 40px;
   cursor: pointer;
 }
 
-/* header styling */
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 0px; /* Decrease top/bottom padding for a thinner header */
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #f8f9fa;
-  height: 40px; 
-}
-
-.logo {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 0;
-}
-
-.nav-links {
-  display: flex;       /* Keeps nav links on the same horizontal line */
-  gap: 5px;           /* Space between each link */
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #333;
-  font-size: 1rem;
-  padding: 20px 16px;
-}
-
-.nav-links a:hover {
-  background-color: #ddd;
-  border-radius: 4px;
-}
-.cart-icon {
-  width: 30px;  /* Adjust the size of the icon */
-  height: auto; /* Keep aspect ratio */
-  vertical-align: middle; /* Align the icon with the text, if any */
-}
-
-/* search input styling */
+/* ...........search input styling ..........*/
 .search-container {
   padding: 20px 0;
   text-align: center;
 }
 
-/* Style for the search input field */
 .search-input {
-  width: 50%;  /* Adjust the width as needed */
+  width: 50%;  
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #ccc;
@@ -161,27 +211,28 @@
   color: #888;
 }
 
-/* added to cart notification */
+/* ..............added to cart notification .............*/
 .notification {
   position: fixed;
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(255, 49, 49, 0.459); /* Green background for success */
+  background-color: rgba(255, 49, 49, 0.459); 
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 1rem;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Ensure it appears above other elements */
+  z-index: 1000; 
   opacity: 0;
-  transition: opacity 0.5s ease; /* Smooth fade-in effect */
+  transition: opacity 0.5s ease; 
 }
 
 .notification.show {
-  opacity: 1; /* Show the alert */
+  opacity: 1; 
 }
-/* cart items styling */
+
+/* ............cart items styling ............*/
 
 .cart-container {
   padding: 20px;

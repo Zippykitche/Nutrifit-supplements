@@ -30,9 +30,11 @@ const handleSearchChange = (e) => {
 return (
  <div>
       <div className="page-title">
+        <p>SAVE UPTO 50% OFF</p>
       <h1>Elevate Your Health</h1>
+      <div className="shop-now-box">SHOP NOW</div>
       <div className="title-images">
-        <img src="/Nutrifit-supplements/images/person.jpg" alt="person" className="person-image" />
+        <img src="/Nutrifit-supplements/images/person.png" alt="person" className="person-image" />
       </div>
     </div>
 
