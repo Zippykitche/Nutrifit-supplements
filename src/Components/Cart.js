@@ -9,8 +9,8 @@ function Cart({ cartItems }) {
       <p>Cart is empty!</p>
     ) : (
       <div className="row">
-        {cartItems.map((item) => (
-          <div key={item.id} className="col-md-4 mb-4">
+        {cartItems.map((item, index) => (
+          <div key={item.id || index} className="col-md-4 mb-4">
             <SupplementCard
               name={item.name}
               description={item.description}

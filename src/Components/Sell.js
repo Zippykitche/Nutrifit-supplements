@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SupplementCard from './SupplementCard';
 
-function Sell({ items = [], addItem }) {
+function Sell({ items = [], setItems}) {
   const [itemName, setItemName] = useState('');
   const [itemDescription, setItemDescription] = useState('');
   const [itemPrice, setItemPrice] = useState('');
@@ -18,13 +18,27 @@ function Sell({ items = [], addItem }) {
       image: itemImage,
     };
 
-    addItem(newItem);
+    fetch("https://my-json-server.typicode.com/Zippykitche/Nutrifit-supplements/supplements", {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(newItem),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setItems(data);
+      })
+      .catch((error) => {
+        console.error('Error posting item:', error); 
+      });
 
     setItemName('');
     setItemDescription('');
     setItemPrice('');
     setItemImage('');
   };
+  const validItems = items.filter(item => item && item.id && item.name);
 
   return (
     <div className="container mt-5">
@@ -71,22 +85,25 @@ function Sell({ items = [], addItem }) {
       <button type="submit" className="btn btn-primary">Post Item</button>
     </form>
 
-    <div className="mt-4">
-      {items.length === 0 ? (
-        <p>No items listed for sale yet!</p>
-      ) : (
-        items.map((item) => (
-          <div key={item.id} className="col-md-4 mb-4">
-          <SupplementCard
-            name={item.name}
-            description={item.description}
-            image={item.image}
-            price={item.price}
-            showCartIcon={false}  
-          />
-        </div>
-        ))
-      )}
+    <div className="mt-4 row">
+    {validItems.length === 0 ? (
+  <p>No items listed for sale yet!</p>
+) : (
+  validItems.map((item) => {
+    return (
+      <div key={item.id} className="col-md-4 mb-4">
+        <SupplementCard
+          name={item.name}
+          description={item.description}
+          image={item.image}
+          price={item.price}
+          showCartIcon={false}  
+        />
+      </div>
+    );
+  })
+)}
+
     </div>
   </div>
   );

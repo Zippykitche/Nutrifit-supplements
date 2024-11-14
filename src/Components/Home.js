@@ -19,8 +19,8 @@ useEffect(() => {
 const allSupplements = [...supplements, ...items];
 
 const filteredSupplements = allSupplements.filter((supplement) =>
-  supplement.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-  supplement.description.toLowerCase().includes(searchQuery.toLowerCase())
+  (supplement && supplement.name && supplement.name.toLowerCase().includes(searchQuery.toLowerCase())) ||
+  (supplement && supplement.description && supplement.description.toLowerCase().includes(searchQuery.toLowerCase()))
 );
 
 const handleSearchChange = (e) => {
