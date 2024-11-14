@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Nutrifit-supplements/static/css/main.d218d2dc.css",
-    "main.js": "/Nutrifit-supplements/static/js/main.402fff83.js",
+    "main.css": "/Nutrifit-supplements/static/css/main.472129c0.css",
+    "main.js": "/Nutrifit-supplements/static/js/main.fe9dbe3f.js",
     "static/js/453.b6a7106b.chunk.js": "/Nutrifit-supplements/static/js/453.b6a7106b.chunk.js",
     "index.html": "/Nutrifit-supplements/index.html",
-    "main.d218d2dc.css.map": "/Nutrifit-supplements/static/css/main.d218d2dc.css.map",
-    "main.402fff83.js.map": "/Nutrifit-supplements/static/js/main.402fff83.js.map",
+    "main.472129c0.css.map": "/Nutrifit-supplements/static/css/main.472129c0.css.map",
+    "main.fe9dbe3f.js.map": "/Nutrifit-supplements/static/js/main.fe9dbe3f.js.map",
     "453.b6a7106b.chunk.js.map": "/Nutrifit-supplements/static/js/453.b6a7106b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d218d2dc.css",
-    "static/js/main.402fff83.js"
+    "static/css/main.472129c0.css",
+    "static/js/main.fe9dbe3f.js"
   ]
 }
